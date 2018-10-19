@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel Auto Deploy Againss
+                    Laravel Auto Deploy Againsssssss
                 </div>
 
                 <div class="links">
