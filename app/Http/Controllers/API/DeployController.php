@@ -19,6 +19,7 @@ class DeployController extends Controller
         Log::info($localHash);
         Log::info(hash_equals($githubHash, $localHash));
 
+        
         if (hash_equals($githubHash, $localHash)) {
             $root_path = base_path();
             Log::info('cd ' . $root_path . '/scripts; ./deploy.sh');
