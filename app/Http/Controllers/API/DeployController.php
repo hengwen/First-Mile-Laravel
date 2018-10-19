@@ -17,6 +17,7 @@ class DeployController extends Controller
         $localHash = 'sha1=' . hash_hmac('sha1', $githubPayload, $localToken, false);
         Log::info($githubHash);
         Log::info($localHash);
+        Log::info(hash_equals($githubHash, $localHash));
 
         if (hash_equals($githubHash, $localHash)) {
             $root_path = base_path();
