@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel Auto Deploy Again
+                    Laravel Auto Deploy Againssss
                 </div>
 
                 <div class="links">
