@@ -14,4 +14,3 @@ if [ "$hasPHP" != "" ]; then
 fi
 
 exit 0
-
