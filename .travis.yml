@@ -1,0 +1,23 @@
+language: php
+
+php:
+- 7.1
+
+before_script:
+- cp .env.travis .env
+- mysql -e 'create database homestead_test;'
+- composer self-update
+- composer install --no-interaction
+#- composer global require squizlabs/php_codesniffer
+
+script:
+- php artisan key:generate
+- vendor/bin/phpunit
+- vendor/bin/phpcs -n --standard=PSR2 ./app/ ./bootstrap/ ./config/ ./resources/ ./tests/ --extensions=php --ignore=cache
+
+notifications:
+  email:
+    recipients:
+    - hengweno@163.com
+    on_success: always
+    on_failure: always
