@@ -14,3 +14,10 @@ script:
 - php artisan key:generate
 - vendor/bin/phpunit
 - vendor/bin/phpcs -n --standard=PSR2 ./app/ ./bootstrap/ ./config/ ./resources/ ./tests/ --extensions=php --ignore=cache
+
+notifications:
+  email:
+    recipients:
+    - hengweno@163.com
+    on_success: always
+    on_failure: always
