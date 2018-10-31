@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel Auto Deploy Test
+                    Laravel Auto Test Deploy!
                 </div>
 
                 <div class="links">
